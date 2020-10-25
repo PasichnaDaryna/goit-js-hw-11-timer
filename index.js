@@ -21,6 +21,10 @@ class CountdownTimer {
     const currentTime = Date.now();
     const deltaTime = this.targetDate - currentTime;
     return deltaTime;
+    }
+    
+    pad(value) {
+    return String(value).padStart(2, '0');
   }
 
   getTimeComponents(time) {
@@ -34,9 +38,7 @@ class CountdownTimer {
     return { days, hours, mins, secs };
   }
 
-  pad(value) {
-    return String(value).padStart(2, '0');
-  }
+  
 
   updateClockface({ days, hours, mins, secs }) {
     daysElem.textContent = `${days}`;
@@ -55,5 +57,5 @@ const timer = new CountdownTimer({
     targetDate: new Date(2021, 1, 7, 0, 0, 0, 0),
 
 });
- const womenDay = new Date(2021, 2, 8, 0, 0, 0, 0)
-  console.log(womenDay)
+//  const womenDay = new Date(2021, 2, 8, 0, 0, 0, 0)
+//   console.log(womenDay)
