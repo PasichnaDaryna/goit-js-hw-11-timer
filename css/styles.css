@@ -1,3 +1,25 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1592424956664-f9476446e93a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+}
+
+.important {
+  color: white;
+  font-size: 36px;
+}
+
 .timer {
   display: flex;
+  margin: 100px auto;
+}
+
+.value {
+  color: white;
+  padding: 8px;
+  font-size: 36px;
+  background: pink;
+}
+
+.label {
+  color: white;
+  font-size: 36px;
 }
